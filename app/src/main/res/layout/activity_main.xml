@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.noobgames.profileapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lion"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Name"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Age"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Address"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="City"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="School"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Phone"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Twitter"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Facebook"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Website"
+                />
+
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="Fav Book"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
