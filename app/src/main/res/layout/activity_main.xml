@@ -23,25 +23,59 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Name"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Age"
-                />
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Name"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="Abhishek"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Age"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="1000 Years"
+                    />
+            </LinearLayout>
 
             <TextView
                 style="@style/MyTextStyle"
                 android:text="Address"
                 />
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="City"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="City"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indore"
+                    />
+            </LinearLayout>
 
             <TextView
                 style="@style/MyTextStyle"
