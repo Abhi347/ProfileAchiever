@@ -56,10 +56,21 @@
                     />
             </LinearLayout>
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Address"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Address"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="VijayNagar"
+                    />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,41 +82,100 @@
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ValueStyle"
                     android:text="Indore"
                     />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="School"
-                />
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="School"
+                    />
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Phone"
-                />
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="SALP"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Twitter"
-                />
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Phone"
+                    />
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Facebook"
-                />
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="+91 7024136043"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Website"
-                />
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Twitter"
+                    />
 
-            <TextView
-                style="@style/MyTextStyle"
-                android:text="Fav Book"
-                />
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="\@abhi347"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Facebook"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="http://facebook.com/Abhi347"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Website"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="http://noobgames.in"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:text="Fav Book"
+                    />
+
+                <TextView
+                    style="@style/ValueStyle"
+                    android:text="Cosmos"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
