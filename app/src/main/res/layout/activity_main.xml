@@ -12,6 +12,7 @@
         android:layout_height="220dp"
         android:scaleType="centerCrop"
         android:src="@drawable/lion"
+        android:onClick="onMapClick"
         />
 
     <ScrollView
