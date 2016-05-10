@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="in.noobgames.profileapp.MainActivity">
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lion"
-        android:onClick="onMapClick"
-        />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:onClick="onMapClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lion"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/lion"
+            ads:civ_border_width="5dp"
+            ads:civ_border_color="#fff"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -71,8 +85,8 @@
 
                 <TextView
                     style="@style/ValueStyle"
-                    android:text="VijayNagar"
                     android:onClick="onMapClick"
+                    android:text="VijayNagar"
                     />
             </LinearLayout>
 
@@ -90,6 +104,7 @@
                     android:text="Indore"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -105,6 +120,7 @@
                     android:text="SALP"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,6 +136,7 @@
                     android:text="+91 7024136043"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -132,9 +149,11 @@
 
                 <TextView
                     style="@style/ValueStyle"
+                    android:onClick="onTwitterClick"
                     android:text="\@abhi347"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -147,9 +166,11 @@
 
                 <TextView
                     style="@style/ValueStyle"
+                    android:autoLink="web"
                     android:text="http://facebook.com/Abhi347"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -165,6 +186,7 @@
                     android:text="http://noobgames.in"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -182,10 +204,11 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
-        ads:adUnitId="@string/unit_id"
-        ads:adSize="BANNER"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/unit_id"/>
 </LinearLayout>

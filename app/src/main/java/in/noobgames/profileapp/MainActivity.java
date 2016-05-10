@@ -1,6 +1,7 @@
 package in.noobgames.profileapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMapClick(View view) {
         Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void onTwitterClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://twitter.com/abhi347"));
         startActivity(intent);
     }
 }
